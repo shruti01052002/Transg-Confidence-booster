@@ -1,0 +1,32 @@
+{% extends 'index.html' %}
+
+{% block head %}
+<title>Sign Up</title>
+{% endblock %}
+
+{% block body %}
+<h3 style="color:white">Please Sign Up Here:</h3>
+<hr>
+<form action="/signup" method="post">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label style="color:white" for="email">Email</label>
+      <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label style="color:white" for="username">Username</label>
+      <input type="text" class="form-control" name="username" id="username" placeholder="Username">
+    </div>
+    <div class="form-group col-md-6">
+      <label style="color:white" for="password1">Password</label>
+      <input type="password" class="form-control" name ="password1" id="password1" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+      <label style="color:white" for="password2">Confirm Password</label>
+      <input type="password" class="form-control" name ="password2" id="password2" placeholder="Confirm Password">
+    </div>
+
+  <button style="color:white" type="submit" class="btn btn-primary">Sign Up</button>
+</form>
+{% endblock %}
